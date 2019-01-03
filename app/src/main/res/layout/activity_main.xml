@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniket.calculator20.MainActivity">
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="65dp"
+        android:text="7"
+        android:layout_below="@+id/Result"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/btn7"
+        android:layout_toEndOf="@+id/btn7"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/btn8"
+        android:layout_toEndOf="@+id/btn8"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/btn7"
+        android:layout_below="@+id/btn8"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn8"
+        android:layout_toEndOf="@+id/btn7"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/btn5"
+        android:layout_toEndOf="@+id/btn8"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn4"
+        android:layout_toStartOf="@+id/btn5"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn5"
+        android:layout_toEndOf="@+id/btn1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn5"
+        android:layout_toEndOf="@+id/btn2"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/btnDecimal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_below="@+id/btn1"
+        android:text="." />
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn1"
+        android:layout_toEndOf="@+id/btnDecimal"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btn2"
+        android:layout_toEndOf="@+id/btn2"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn9"
+        android:layout_marginEnd="22dp"
+        android:text="Del" />
+
+    <Button
+        android:id="@+id/btnDevide"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/btnDel"
+        android:layout_below="@+id/btnDel"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/btnDevide"
+        android:layout_below="@+id/btnDevide"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/btnSubtract"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/btnMultiply"
+        android:layout_below="@+id/btnMultiply"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/Expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnDel"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn7"
+        android:layout_marginTop="50dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Result: "
+        android:textSize="22sp"
+        android:layout_below="@+id/Expression"
+        android:layout_alignStart="@+id/btn7"
+        android:layout_alignEnd="@+id/Expression" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/btnSubtract"
+        android:layout_below="@+id/btnSubtract"
+        android:text="+" />
+
+</RelativeLayout>
